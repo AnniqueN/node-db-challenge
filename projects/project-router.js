@@ -94,10 +94,11 @@ router.post('/:id/tasks', (req, res) => {
       res.status(201).json(task);
     })
     .catch(err => {
-      res.status(500).json({
-        message: 'Error occurred while adding a new task.',
-        err: err,
-      });
+        console.log(err)
+    //   res.status(500).json({
+        // message: 'Error occurred while adding a new task.',
+        // err: err,
+    //   });
     });
 });
 
